@@ -43,4 +43,26 @@ public class ArticleMan {
 		}
 		return result;
 	}
+	
+	public List<ArticleVO>  getRandDateArticles(){
+		List<ArticleVO> lis = new ArrayList<ArticleVO>();
+		try {
+			lis = this.objArticleDAO.getRandDateArticles();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return lis;
+	}
+	
+	public int getCountArticle(){
+		int iCount = 0;
+		try {
+			iCount = this.objArticleDAO.getCountArticle();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return iCount;
+	}
 }

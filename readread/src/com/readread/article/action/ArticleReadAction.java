@@ -21,4 +21,17 @@ public final class ArticleReadAction {
 		objArticleVO.setScore(100);
 		objArticleMan.insertArticleVO(objArticleVO);
 	}
+	
+	public static String getRandDateArticleJson(){
+		ArticleMan objArticleMan = new ArticleMan();
+		List<ArticleVO> lis = objArticleMan.getRandDateArticles();
+		Gson gson = new Gson(); 
+		String str=  gson.toJson(lis);
+		return str;
+	}
+	
+	public static int getCountArticle(){
+		ArticleMan objArticleMan = new ArticleMan();
+		return objArticleMan.getCountArticle();
+	}
 }
