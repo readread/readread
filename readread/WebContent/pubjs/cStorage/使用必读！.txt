@@ -1,0 +1,10 @@
+1.1.cStorage使用要求
+
+    加载js文件cStorage.min.js（支持IE8+，Firefox，Chrome）或cStorage.full.min.js（支持IE6+，Firefox，Chrome），只要引用一个。
+    请不要修改下划线开头的私有属性和调用下划线开头的私有方法，框架升级将会导致报错。
+    不要存储一些随着时间推移，而不断增加的数据。
+
+1.2.IE6，IE7支持的要求
+
+    cStorage.full.min.js以及扩展尽量在body标签内引入。
+    因为IE6,7的存储数据只能挂载在cStorage框架所在目录，建议保持当前域只有一份cStorage框架代码在使用，cStorage目录确定后，不要随意移动这个目录。
