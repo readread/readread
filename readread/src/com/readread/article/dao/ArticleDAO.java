@@ -96,7 +96,7 @@ public class ArticleDAO extends BaseDAO{
         
         // 要执行的SQL语句
         StringBuffer sql =new StringBuffer(256);
-        			 sql.append("SELECT * FROM read_article r WHERE r.updateTime < CURDATE() AND r.updateTime >  DATE_SUB(CURDATE(),INTERVAL 2 DAY) ORDER BY RAND() LIMIT 5");
+        			 sql.append("SELECT * FROM read_article r WHERE r.updateTime < DATE_SUB(CURDATE(),INTERVAL 1 DAY) AND r.updateTime >  DATE_SUB(CURDATE(),INTERVAL 2 DAY) ORDER BY RAND() LIMIT 5");
         			 
         // 结果集
         rs = statement.executeQuery(sql.toString());
@@ -129,7 +129,7 @@ public class ArticleDAO extends BaseDAO{
         
         // 要执行的SQL语句
         StringBuffer sql =new StringBuffer(256);
-        			 sql.append("SELECT COUNT(1) FROM read_article r WHERE r.updateTime < CURDATE() AND r.updateTime >  DATE_SUB(CURDATE(),INTERVAL 2 DAY)");
+        			 sql.append("SELECT COUNT(1) FROM read_article r WHERE r.updateTime < DATE_SUB(CURDATE(),INTERVAL 1 DAY) AND r.updateTime >  DATE_SUB(CURDATE(),INTERVAL 2 DAY)");
         			 
         // 结果集
         rs = statement.executeQuery(sql.toString());

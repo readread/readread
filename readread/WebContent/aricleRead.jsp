@@ -5,7 +5,12 @@
 
 <%
 response.setContentType("text/html;charset=gbk");
-String strArticle= ArticleReadAction.getRandArticleJson();
+String strArticle="";
+if(ArticleReadAction.getCountArticle()>=5){
+	strArticle= ArticleReadAction.getRandDateArticleJson();
+}else{
+	strArticle= ArticleReadAction.getRandArticleJson();
+}
 PrintWriter outPrint = response.getWriter();
 outPrint.print(strArticle);
 outPrint.close();
