@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=gbk"  pageEncoding="gbk"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"  pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <script type="text/javascript" name="baidu-tc-cerfication" src="http://apps.bdimg.com/cloudaapi/lightapp.js#db7b160e2d6af1fdb90696f3ff5777cf"></script><script type="text/javascript">window.bd && bd._qdc && bd._qdc.init({app_id: '374d7174ba704f17afbbae84'});</script>
-<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="./pubjs/bootstrap-3.0.3-dist/dist/css/bootstrap.min.css">
 <style type="text/css">

@@ -12,7 +12,7 @@ public class AricleReadServlet extends HttpServlet{
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServletException {
-		response.setContentType("text/html;charset=gbk");
+		response.setContentType("text/html;charset=utf-8");
 		String strArticle="";
 		if(ArticleReadAction.getCountArticle()>5){
 			strArticle= ArticleReadAction.getRandDateArticleJson();

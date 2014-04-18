@@ -1,6 +1,7 @@
 eclipse.preferences.version=1
-encoding//WebContent/aricleInsert.jsp=GBK
-encoding//WebContent/aricleRead.jsp=GBK
-encoding//WebContent/index.jsp=gbk
-encoding//WebContent/insertAricle.jsp=GBK
-encoding//WebContent/readAricle.jsp=GBK
+encoding//WebContent/aricleInsert.jsp=UTF-8
+encoding//WebContent/aricleRead.jsp=UTF-8
+encoding//WebContent/fastReadAricle.jsp=UTF-8
+encoding//WebContent/index.jsp=UTF-8
+encoding//WebContent/insertAricle.jsp=UTF-8
+encoding//WebContent/readAricle.jsp=UTF-8

@@ -28,7 +28,7 @@ public class AricleInsertServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/html;charset=gbk");
+		response.setContentType("text/html;charset=utf-8");
 		String strTitle = request.getParameter("title");
 		String strContent = request.getParameter("content");
 		ArticleVO objArticleVO = new ArticleVO();
