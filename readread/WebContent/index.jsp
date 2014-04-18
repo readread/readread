@@ -13,7 +13,7 @@
 	         vertical-align:middle;
 	      }
 	      .text_title_cut{
-	      	text-overflow:ellipsis; /*ellipsisÊÇÊ¡ÂÔºÅ,»¹ÓĞ±ğµÄ¿ÉÒÔÑ¡*/
+	      	text-overflow:ellipsis; /*ellipsisï¿½ï¿½Ê¡ï¿½Ôºï¿½,ï¿½ï¿½ï¿½Ğ±ï¿½Ä¿ï¿½ï¿½ï¿½Ñ¡*/
 			white-space:nowrap;
 			overflow:hidden;
 	      }
@@ -70,7 +70,7 @@
     </p>
   </a>
 </div>
-	<button type="button" class="btn btn-default btn-block" onclick="gotoInsert()">ÎÒÒª·ÖÏí </button>
+	<button type="button" class="btn btn-default btn-block" onclick="gotoInsert()">æˆ‘è¦åˆ†äº«</button>
 </div>
 <script src="./pubjs/cStorage/cStorage.min.js"></script>
 <script type="text/javascript" >
@@ -111,7 +111,7 @@
 		    if (this.status >= 200 && this.status < 400){
 		      // Success!
 		        lisArticel= this.responseText;
-				//ÉèÖÃ¶à¸öÖµ
+				//è®¾ç½®å¤šä¸ªå€¼
 				myStorage.set("lisArticel",lisArticel);
 				myStorage.set("loacleDate",loacleDate);
 				jsonArticel = lisArticel;

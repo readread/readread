@@ -52,7 +52,7 @@ String aricleKey = request.getParameter("articleKey");
 	    <pre class="lead" id="p_article_id">
 	    </pre>
 	 <h6>
-		<button id="button_home" type="button" class="btn btn-default btn-block"  onclick="goHome()">·µ»ØÊ×Ò³ </button>
+		<button id="button_home" type="button" class="btn btn-default btn-block"  onclick="goHome()">è¿”å›žé¦–é¡µ </button>
 	</h6>
 </div>
 

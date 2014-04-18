@@ -26,19 +26,19 @@
 <body onload="init()">
 	<br>    
 <div class="container">
-	<input class="form-control " type="text" maxlength="16" placeholder="您的标题" id="title_id">
+	<input class="form-control " type="text" maxlength="16" placeholder="鎮ㄧ殑鏍囬" id="title_id">
 	<h6>
-		<textarea class="form-control" rows="14" placeholder="您的分享内容" id="content" 
+		<textarea class="form-control" rows="14" placeholder="鎮ㄧ殑鍒嗕韩鍐呭" id="content" 
 					onkeypress="return(this.value.length<2000)"  
                     onkeydown="textlen(this,2000)"   
                     onkeyup="textlen(this,2000)"   
                     onblur="maxtext(this,2000)" ></textarea>
     </h6>
-	<button type="button" class="btn btn-default btn-lg button_width"  onclick="save()">分享 </button>
-	<button id="button_temp_save" type="button" class="btn btn-default btn-lg button_width button_width_left"  onclick="tempSave()">暂存 </button>
-	<button id="button_clear" type="button" class="btn btn-default btn-lg button_clear_width button_width_left"  onclick="doClear()">擦除 </button>
+	<button type="button" class="btn btn-default btn-lg button_width"  onclick="save()">鍒嗕韩 </button>
+	<button id="button_temp_save" type="button" class="btn btn-default btn-lg button_width button_width_left"  onclick="tempSave()">鏆傚瓨 </button>
+	<button id="button_clear" type="button" class="btn btn-default btn-lg button_clear_width button_width_left"  onclick="doClear()">鎿﹂櫎 </button>
 	<h6>
-		<button id="button_home" type="button" class="btn btn-default btn-block"  onclick="goHome()">返回首页 </button>
+		<button id="button_home" type="button" class="btn btn-default btn-block"  onclick="goHome()">杩斿洖棣栭〉 </button>
 	</h6>
 </div>
 
@@ -89,7 +89,7 @@
 			data:{title:$("#title_id").val(),content:$("#content").val()},
 			url:'aricleInsert.jsp',
 			success:function(data){
-				alert("成功提交");
+				alert("鎴愬姛鎻愪氦");
 				var myStorage = cst.use("myStorage");
 				myStorage.remove("tempArticel");
 				goHome();
